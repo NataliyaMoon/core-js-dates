@@ -223,8 +223,7 @@ function getNextFridayThe13th(date) {
 
   for (;;) {
     const candidateDate = new Date(year, month, 13);
-    if (candidateDate > date && candidateDate.getDay() === 5) {
-      candidateDate.setUTCHours(18, 0, 0, 0);
+    if (candidateDate.getDay() === 5) {
       return candidateDate;
     }
 
